@@ -1,0 +1,91 @@
+
+$animation-duration: 0.2s;
+
+@mixin label-active() {
+    font-size: 0.75rem;
+    transform: translateY(-14px);
+}
+
+.form-field {
+    display: block;
+    margin-bottom: 16px;
+    background-color: #fafafa;
+
+    &--is-active {
+        .form-field__control {
+            &::after {
+                border-bottom: 2px solid $primary;
+                transform: scaleX(150);
+                background-color: #fafafa;
+            }
+        }
+
+        .form-field__label {
+            color: $primary;
+            @include label-active();
+            background-color: #fafafa;
+        }
+    }
+
+    &--is-filled {
+        .form-field__label {
+            @include label-active();
+        }
+    }
+}
+
+.form-field__label {
+    background-color: #fafafa;
+    color:#b5b5b5;
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    left: 0;
+    margin: 0;
+    padding: 18px 12px 0;
+    position: absolute;
+    top: 0;
+    transition: all $animation-duration;
+    width: 100%;
+}
+
+.form-field__control {
+    border-radius: 4px 4px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &::after {
+        
+        border-bottom: 2px solid $primary;
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        transform: scaleX(0);
+        transition: all $animation-duration;
+        width: 1%;
+    }
+}
+
+.form-field__input,
+.form-field__textarea {
+    appearance: none;
+    background-color: #fafafa;
+    border: 0;
+    border-bottom: 1px solid #b5b5b5;
+    color: #333;
+    display: block;
+    font-size: 1rem;
+    margin-top: 24px;
+    outline: 0;
+    padding: 0 12px 10px 12px;
+    width: 100%;
+}
+
+.form-field__textarea {
+    height: 150px;
+}

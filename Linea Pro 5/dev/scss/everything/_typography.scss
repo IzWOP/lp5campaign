@@ -1,0 +1,181 @@
+
+@import url("https://p.typekit.net/p.css?s=1&k=vcs3wfi&ht=tk&f=32226.32227.32231&a=16260759&app=typekit&e=css");
+
+@font-face {
+    font-family: "din-2014";
+    src: url("https://use.typekit.net/af/4b34d2/00000000000000003b9b0acf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/4b34d2/00000000000000003b9b0acf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/4b34d2/00000000000000003b9b0acf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "din-2014";
+    src: url("https://use.typekit.net/af/cb6232/00000000000000003b9b0ad8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/cb6232/00000000000000003b9b0ad8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/cb6232/00000000000000003b9b0ad8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "din-2014";
+    src: url("https://use.typekit.net/af/19a2f0/00000000000000003b9b0ac7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/19a2f0/00000000000000003b9b0ac7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/19a2f0/00000000000000003b9b0ac7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url("https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2") format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url("https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXiWtFCc.woff2") format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url("https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2") format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url("https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2") format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+%din {
+    font-family: "din-2014",
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif !important;
+}
+
+%lato {
+    font-family: 'Lato', sans-serif !important;
+}
+
+body{
+    font-family: "din-2014",
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
+}
+
+.header-1 {
+    @extend %din;
+    font-size: 6.25rem;
+    // @include media-breakpoint-up(md){
+    //     font-size: 12.5rem;
+    // }
+    //h2
+    font-weight: bold;
+    letter-spacing:-1.5px;
+}
+
+.header-2 {
+    //h4
+    @extend %din;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.header-3 {
+    //h5
+    @extend %din;
+    font-size: 3.125rem;
+    line-height: 1.04;
+    font-weight: 400;  
+}
+
+.header-4{
+    //h6
+    @extend %din;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.05px;
+}
+
+.header-5 {
+    //sub -1
+    @extend %din;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header-6 { 
+    @extend %din;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.body-1 {
+    @extend %lato;
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+}
+
+.body-2{
+    @extend %lato;
+    font-size: .7813rem;
+    letter-spacing: 0.25px;
+}
+
+.subtitle-1{
+    @extend %din;
+    font-size: 1rem;
+    line-height: 1.41;
+    letter-spacing: 0.15px;
+}
+
+.subtitle-2{
+    @extend %din;
+    font-size: .9375rem;
+    line-height: 1.27;
+    letter-spacing: 0.15px;
+    font-weight: 700;
+}
+
+.button {
+    @extend %din;
+    font-size: 14.5px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.caption{
+    @extend %din;
+    font-size: .75rem;
+    letter-spacing: .5px;
+    line-height: 1.33;
+}
+
+.overline {
+    @extend %din;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}

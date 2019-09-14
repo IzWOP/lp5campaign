@@ -1,0 +1,31 @@
+//Primary
+$primary: #84D600;
+$black:#000000;
+$midnight:#242424;
+$white:#FFFFFF;
+$off-white: #FAFAFA;
+$light-gray: #F6F6F6;
+$gray: #ECECEC;
+
+//industries
+$healthcare:#03D5FF;
+$hospitality: #e3d800;
+$retail:#EB2300;
+$supplychain:#FF5900;
+$travel:#8347FC;
+$dark-gray: #B5B5B5; // 'merica!
+
+// 2 - Silent Classes
+%din {
+    font-family: "din-2014",
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
+}
+
+%lato {
+    font-family: 'Lato',
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
+}

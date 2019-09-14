@@ -1,0 +1,23 @@
+// 5 - Default stylings
+html,
+body {
+    font-size: 16px;
+    height: 100%; //Root Font Size and Default Web Size
+}
+
+body {
+    @extend %lato;
+    color: #242424;
+}
+
+a {
+    span{
+        color: $primary;
+    }
+    color: $primary;
+    &:link {
+        color: $primary;
+    }
+
+}
+

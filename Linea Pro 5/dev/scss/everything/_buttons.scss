@@ -1,0 +1,145 @@
+//margin top of 32px
+//if bottom button margin 8
+//width 100%
+//browser sniffing 
+a {
+    text-decoration: none;
+    color: darken($primary, 5%);
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0 !important;
+    text-decoration: none;
+    display: inline-block;
+    transition: .1s ease-in;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-size: 14.5px;
+    // width: 100%;
+
+    &:hover {
+        background-color: darken($primary, 2%);
+    }
+
+    &:active {
+        outline: none;
+        transform: scale(.98);
+        opacity: .7;
+
+        img {
+            margin-left: .5rem;
+        }
+    }
+
+    &:focus {
+        outline: none;
+        opacity: .8;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-top: -.5rem;
+        margin-bottom: -.3rem;
+        margin-left: .3rem;
+        margin-right: -.3rem;
+        text-align: center;
+        transition: .3s;
+    }
+
+    &-primary {
+        color: $white;
+        padding: 0.66rem 1.5rem;
+        background-color: $primary;
+    }
+
+    &-secondary {
+        color: $midnight;
+        padding: 0.66rem 1.5rem;
+        background-color: $gray;
+        transition: .6s;
+
+        &:hover {
+            background-color: $midnight;
+            color: $white;
+        }
+
+        &:active {
+            outline: none;
+            transform: scale(.94);
+            //  box-shadow: 0 .25rem 1rem rgba($white, .2);
+        }
+    }
+
+    &-text-primary {
+        color: $primary;
+        transform: scale(1.02);
+
+        &::after {
+            content: "";
+            height: 2px;
+            width: 0%;
+            transition: .2s;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 1.25rem;
+            background-color: $primary;
+            position: absolute;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: darken($primary, 5%);
+
+            &::after {
+                width: 100%;
+                background-color: darken($primary, 5%);
+            }
+        }
+    }
+
+    &-text-secondary {
+        color: $midnight;
+        transform: scale(1.02);
+
+        &::after {
+            content: "";
+            height: 2px;
+            width: 0%;
+            transition: .2s;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 1.25rem;
+            background-color: $midnight;
+            position: absolute;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $black;
+
+            &::after {
+                width: 100%;
+                background-color: $black;
+            }
+        }
+    }
+
+    &.icon {
+        background-image: url('https://res.cloudinary.com/ipcmobile/image/upload/c_scale,h_8,w_8/v1/icons/right-arrow-white.svg');
+        background-repeat: no-repeat;
+        background-position: 95% 45%;
+        background-size: 16px;
+        padding-right: 30px;
+
+
+    }
+}
+
+button {
+    margin: 0;
+    @extend %din;
+
+}
