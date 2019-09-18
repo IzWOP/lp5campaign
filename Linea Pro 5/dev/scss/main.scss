@@ -29,6 +29,14 @@
         color: $white;
     }
 
+    .gray-bg {
+        background-color: $light-gray;
+        margin-top: 1rem;
+        @include media-breakpoint-up(lg) {
+            height: 512px;
+        }
+    }
+
     .subfooter-sec {}
 
     footer {}
@@ -119,12 +127,22 @@
             }
 
         }
+    }
 
-        .cost-sec {}
+        .cost-sec {
+            padding-bottom: 3rem;
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 0;
+            }
+            .row{
+                @include media-breakpoint-up(lg) {
+                    height: 100%;
+                }
+            }
+        }
 
         .accessory-sec {}
 
         .automate-sec {}
 
-    }
 }
