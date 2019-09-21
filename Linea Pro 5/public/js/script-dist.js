@@ -1,2 +1,2 @@
-"use strict";
+"use strict";document.addEventListener("DOMContentLoaded",function(){var actionBar=document.getElementsByClassName("action-bar")[0],containerBar=actionBar.firstElementChild,actionOrigin=actionBar.offsetTop,wrapper=document.createElement("div");window.onscroll=function(){var currentScroll=document.documentElement.scrollTop||document.body.scrollTop;actionBar.offsetTop<=currentScroll?(actionBar.replaceChild(wrapper,containerBar),wrapper.appendChild(containerBar),wrapper.classList.add("active")):currentScroll-75<=actionOrigin&&(wrapper.classList.remove("active"),actionBar.appendChild(containerBar),wrapper.remove())}});
 //# sourceMappingURL=script-dist.js.map
