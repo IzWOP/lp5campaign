@@ -198,8 +198,7 @@
 
     .action-bar {
         @extend %din;
-        background-color: #f6f6f6;
-        
+        background-color: transparent;
         width: 100%;
         z-index: 1;
         box-shadow: transparent;
@@ -207,7 +206,51 @@
         max-height: 180px;
         overflow: hidden;
         display: flex;
-        transition: all 5s ease;
+        
+        .action-float{
+            width: 100%;
+            background-color: #f6f6f6;
+            width: 100%;
+            z-index: 1;
+            box-shadow: transparent;
+            height: 100%;
+            max-height: 180px;
+            transition: all .5s ease;
+            &.active {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                box-shadow: 0px 6px 10px -5px rgba(0, 0, 0, .2);
+                z-index: 10;
+                height: 100%;
+                max-height: 120px;
+                background-color: #f6f6f6;
+                transition: max-height .5s ease;
+          
+                .container{
+                    height: auto;
+                }
+        
+                img {
+                    display: none;
+        
+                    @include media-breakpoint-up(md) {
+                        margin: auto 0 auto 0;
+                        background-color: #ECECEC;
+                        border-radius: 7px;
+                        display: block;
+                        width: 88px;
+                        transition: all .5s ease;
+                    }
+                }
+        
+                .action-bar__text-body {
+                    opacity: 0;
+                    display: none;
+                    transition: opacity 1s ease;
+                }
+            }
+        }
         .container{
             height: 180px;
             &>.row {
@@ -265,41 +308,7 @@
 
     }
 
-    .active {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        box-shadow: 0px 6px 10px -5px rgba(0, 0, 0, .2);
-        z-index: 10;
-        height: 100%;
-        max-height: 120px;
-        background-color: #f6f6f6;
-        transition: max-height 5s ease;
-        animation-name: actionAddActive;
-        animation-duration: .4s;
-        .container{
-            height: auto;
-        }
-
-        img {
-            display: none;
-
-            @include media-breakpoint-up(md) {
-                margin: auto 0 auto 0;
-                background-color: #ECECEC;
-                border-radius: 7px;
-                display: block;
-                width: 88px;
-                transition: all .8s ease;
-            }
-        }
-
-        .action-bar__text-body {
-            opacity: 0;
-            display: none;
-            transition:  all .4s;
-        }
-    }
+ 
 
     .power-sec {
         overflow: hidden;
