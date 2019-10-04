@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../dev/js/script.js"],"names":["document","addEventListener","firstElementChild","offsetTop"],"mappings":"aAAAA,SAAAC,iBAAA,mBAAA,uEAEA,yBACAC,yCACAC,gLASA,oEAEA"}
+{"version":3,"sources":["../../dev/js/script.js"],"names":["document","addEventListener","firstElementChild","offsetTop"],"mappings":"aAAAA,SAAAC,iBAAA,mBAAA,uEAEA,yBACAC,yCACAC,gLASA,uEAEA"}

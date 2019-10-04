@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // actionBar.replaceChild(wrapper, actionFloat);
             // wrapper.appendChild(actionFloat);
             actionFloat.classList.add('active');
-        }else if(currentScroll  <= actionOrigin){
+        }else if(currentScroll - 20  <= actionOrigin){
             actionFloat.classList.remove('active');
             // // actionBar.replaceChild(actionFloat, wrapper);
             // actionBar.appendChild(actionFloat);
